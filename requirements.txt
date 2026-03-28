@@ -1,0 +1,196 @@
+# ============================================
+# YOLOv11 核心依赖 / Core Dependencies
+# ============================================
+
+# Ultralytics YOLO 框架 / Ultralytics YOLO framework
+ultralytics==8.3.163
+
+# PyTorch 深度学习框架 (CUDA 13.0 版本) / PyTorch deep learning framework (CUDA 13.0 version)
+torch==2.11.0+cu130
+
+# PyTorch 视觉库 (图像处理与预训练模型) / PyTorch vision library (image processing & pretrained models)
+torchvision==0.26.0+cu130
+
+
+# ============================================
+# 基础科学计算 / Basic Scientific Computing
+# ============================================
+
+# 数值计算库 / Numerical computing library
+numpy==2.4.3
+
+# 科学计算库 / Scientific computing library
+scipy==1.17.1
+
+# 数据结构与数据分析 / Data structures & analysis
+pandas==3.0.1
+
+
+# ============================================
+# 图像与视频处理 / Image & Video Processing
+# ============================================
+
+# OpenCV 图像处理库 / OpenCV image processing library
+opencv-python==4.13.0.92
+
+# PIL 图像处理库 / PIL image processing library
+pillow==12.1.1
+
+# TIFF 图像文件处理 / TIFF image file processing
+tifffile==2026.3.3
+
+
+# ============================================
+# 可视化 / Visualization
+# ============================================
+
+# 绘图库 / Plotting library
+matplotlib==3.10.8
+
+# 统计可视化库 / Statistical visualization library
+seaborn
+
+# 终端进度条 / Terminal progress bar
+tqdm==4.67.3
+
+
+# ============================================
+# 配置与工具 / Configuration & Utilities
+# ============================================
+
+# YAML 配置文件解析 / YAML configuration file parser
+pyyaml==6.0.3
+
+# 文件锁定 (多进程安全) / File locking (multiprocess safe)
+filelock==3.25.2
+
+# 文件系统操作抽象 / Filesystem operations abstraction
+fsspec==2026.2.0
+
+# 系统进程管理 / System process management
+psutil==7.2.2
+
+
+# ============================================
+# 网络请求 / Network Requests
+# ============================================
+
+# HTTP 请求库 / HTTP request library
+requests==2.32.5
+
+# 异步 HTTP 请求 / Asynchronous HTTP requests
+aiohttp==3.13.3
+
+# URL 处理 / URL handling
+urllib3==2.6.3
+
+# SSL 证书验证 / SSL certificate verification
+certifi==2026.2.25
+
+# 字符编码处理 / Character encoding handling
+charset-normalizer==3.4.6
+
+# IDNA 编码处理 / IDNA encoding handling
+idna==3.11
+
+
+# ============================================
+# 开发与调试工具 / Development & Debugging Tools
+# ============================================
+
+# 增强版交互式 Python / Enhanced interactive Python
+ipython==8.12.3
+
+# Jupyter 核心 / Jupyter core
+jupyter-core==5.9.1
+
+# Jupyter 客户端 / Jupyter client
+jupyter-client==8.8.0
+
+# 笔记本格式处理 / Notebook format handling
+nbformat==5.10.4
+
+# 笔记本转换工具 / Notebook conversion tools
+nbconvert==7.17.0
+
+# 代码高亮 / Code highlighting
+pygments==2.19.2
+
+
+# ============================================
+# 测试与质量保证 / Testing & Quality Assurance
+# ============================================
+
+# 测试框架 / Testing framework
+pytest==9.0.2
+
+# 插件系统 / Plugin system
+pluggy==1.6.0
+
+# 测试配置 / Test configuration
+iniconfig==2.3.0
+
+# 包装工具 / Packaging utilities
+packaging==25.0
+
+
+# ============================================
+# 模型导出与部署 / Model Export & Deployment
+# ============================================
+
+# ONNX 模型导出支持 / ONNX model export support
+# onnx
+# onnxruntime
+
+# OpenVINO 优化与部署 / OpenVINO optimization & deployment
+# openvino
+
+# TensorRT 加速 (NVIDIA) / TensorRT acceleration (NVIDIA)
+# tensorrt
+
+# CoreML 导出 (Apple) / CoreML export (Apple)
+# coremltools
+
+# TensorFlow.js 导出 (Web) / TensorFlow.js export (Web)
+# tensorflowjs
+
+
+# ============================================
+# 可选功能扩展 / Optional Feature Extensions
+# ============================================
+
+# 网页解析 (文档生成用) / Web parsing (for documentation)
+# beautifulsoup4==4.14.3
+
+# 几何图形处理 (区域计数) / Geometric shape processing (region counting)
+# shapely
+
+# 视频下载 (YouTube 等) / Video downloading (YouTube etc.)
+# pytubefix
+# yt_dlp
+
+# SAHI 切片辅助推理 / SAHI slicing aided inference
+# sahi
+
+# 模型压缩工具包 / Model compression toolkit
+# nncf
+
+# Hugging Face Transformers (动作识别) / Hugging Face Transformers (action recognition)
+# transformers
+
+
+# ============================================
+# 注意事项 / Notes
+# ============================================
+# 1. PyTorch 的 CUDA 版本可根据硬件调整 / PyTorch CUDA version can be adjusted based on hardware
+#    CPU 版本: pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#    CUDA 11.8: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#    CUDA 12.1: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#    CUDA 13.0: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+#
+# 2. 模型导出依赖默认已注释，需要时取消注释 / Model export dependencies are commented by default, uncomment when needed
+#
+# 3. 基础训练与推理只需核心依赖即可 / Basic training and inference only require core dependencies
+#
+# 4. 安装命令 / Installation command:
+#    pip install -r requirements.txt
