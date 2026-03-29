@@ -1,0 +1,10 @@
+path: datasets
+train:
+  - fursuit-YOLO2/images/train
+  - dataset_distill/images/train
+val: fursuit-YOLO2/images/val
+
+
+
+names:
+  0: fursuit
