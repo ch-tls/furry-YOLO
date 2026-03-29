@@ -1,4 +1,4 @@
-# YOLO-Fursuit-Coser: Specialized Detection for ACG Events
+# Furry-YOLO: Specialized Detection for ACG Events
 [English](#english) | [中文](#chinese)
 
 ![YOLO11](https://img.shields.io/badge/Model-YOLO11%20v8.3.168-blue.svg)
